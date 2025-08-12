@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Join Slow & Steady Signals</title>
+  <meta name="description" content="Free Telegram signals. Fewer trades, higher quality. Join now and get tomorrow's setups." />
+  <meta property="og:title" content="Join Slow & Steady Signals" />
+  <meta property="og:description" content="Daily slow-and-steady trades you can copy instantly." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOUR-DOMAIN.com/join" />
+  <meta property="og:image" content="https://YOUR-DOMAIN.com/og.jpg" />
+
+  <style>
+    :root { --radius:14px; }
+    * { box-sizing:border-box; }
+    html, body { height:100%; }
+    body {
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      background: radial-gradient(circle at 20% 10%, #0f1220, #080a12 60%);
+      color:#fff; display:flex; align-items:center; justify-content:center;
+    }
+    .wrap {
+      width:100%; max-width:640px; padding:28px; text-align:center;
+    }
+    .card {
+      background: rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.08);
+      border-radius: var(--radius);
+      padding:24px 18px; backdrop-filter: blur(6px);
+    }
+    .brand { display:flex; align-items:center; justify-content:center; gap:12px; margin-bottom:8px; opacity:.95; }
+    .brand img { width:36px; height:36px; border-radius:9px; }
+    h1 { font-size: clamp(26px, 5.6vw, 36px); line-height:1.1; margin:8px 0 10px; }
+    p.kicker { color:#cbd2ff; font-weight:600; letter-spacing:.3px; margin:0 0 10px; }
+    ul.bullets {
+      list-style:none; padding:0; margin:14px auto 18px; max-width:520px; text-align:left;
+    }
+    ul.bullets li {
+      display:flex; gap:10px; margin:8px 0; align-items:flex-start;
+    }
+    ul.bullets b { color:#b7c2ff; }
+    .cta {
+      display:block; width:100%; border:none; cursor:pointer;
+      padding:16px 18px; font-size:18px; font-weight:700; border-radius:12px;
+      background: linear-gradient(180deg, #27c46b, #16a34a);
+      color:#fff; box-shadow: 0 10px 24px rgba(22,163,74,.35);
+      transition: transform .05s ease, filter .15s ease;
+    }
+    .cta:active { transform: translateY(1px); filter: brightness(.95); }
+    .trust {
+      display:flex; gap:10px; justify-content:center; align-items:center;
+      font-size:12px; color:#aab; margin-top:12px;
+    }
+    .foot {
+      margin-top:12px; font-size:12px; color:#9aa2c7;
+    }
+    .badges { display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin-top:10px; }
+    .badge {
+      border:1px solid rgba(255,255,255,.12); border-radius:999px; padding:6px 10px; font-size:12px; color:#c9d3ff;
+      background: rgba(255,255,255,.04);
+    }
+    /* small safety for very tall phones */
+    @media (min-height:800px) {
+      .wrap { padding-top:48px; padding-bottom:48px; }
+    }
+  </style>
+
+  <!-- Meta Pixel (replace PIXEL_ID) -->
+  <script>
+    !(function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)})(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1368093677619088'); // <-- your pixel id
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=PIXEL_ID&ev=PageView&noscript=1"/></noscript>
+</head>
+
+<body>
+  <main class="wrap">
+    <div class="card">
+      <div class="brand">
+        <img src="logo.PNG" alt="Slow & Steady" />
+        <div>Slow & Steady Signals</div>
+      </div>
+
+      <!-- Try A/B headlines by swapping the h1 text -->
+      <h1>Join Our Free Telegram Signals</h1>
+      <p class="kicker">Fewer trades. Higher quality. Copy in seconds.</p>
+
+      <ul class="bullets">
+        <li>✅ <span><b>Clarity first:</b> one or two clean setups per day.</span></li>
+        <li>🕒 <span><b>No screen stress:</b> alerts when price is ready.</span></li>
+        <li>📊 <span><b>Transparent tracking:</b> live Myfxbook + weekly recap.</span></li>
+      </ul>
+
+      <!-- CTA opens Telegram and fires a Pixel event -->
+      <button id="cta" class="cta">📲 Join Free on Telegram</button>
+
+      <div class="badges">
+        <div class="badge">Beginner‑friendly</div>
+        <div class="badge">No spam</div>
+        <!-- <div class="badge">Cancel anytime</div> -->
+      </div>
+
+      <div class="trust">
+        <span>🔒</span><span>We never sell your data</span>
+      </div>
+
+      <div class="foot">
+        By continuing you agree to our <a href="/privacy.html" style="color:#cbd2ff">Privacy</a>.
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Replace with your actual Telegram join link (public or private)
+    const TELEGRAM_URL = 'https://t.me/slowandsteadyyy';
+
+    // Append UTM parameters for ad/source attribution
+    function withUTM(url) {
+      const p = new URLSearchParams(location.search);
+      const utm = new URLSearchParams({
+        utm_source: p.get('utm_source') || 'meta',
+        utm_medium: p.get('utm_medium') || 'ads',
+        utm_campaign: p.get('utm_campaign') || 'slowandsteady',
+        utm_content: p.get('utm_content') || ''
+      });
+      return url + (url.includes('?') ? '&' : '?') + utm.toString();
+    }
+
+    document.getElementById('cta').addEventListener('click', function () {
+      try { fbq('trackCustom', 'TelegramClick'); } catch(e) {}
+      // slight delay to ensure event fires
+      setTimeout(() => { window.location.href = withUTM(TELEGRAM_URL); }, 120);
+    });
+  </script>
+
+  <noscript>
+    <div style="text-align:center; margin-top:14px;">
+      JavaScript is off — <a href="https://t.me/slowandsteadyyy'">open Telegram</a>
+    </div>
+  </noscript>
+</body>
+</html>
